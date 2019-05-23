@@ -12,3 +12,6 @@ Diseño de app en Flutter
 
 [5 - Diseño Scroll - parte 1](../../tree/de531487c3334b7f75a90b4f9c1b021a49ae4665/)
 
+[6 - Diseño Scroll - parte 2](../../tree/d7b1fd1109adf05e68475686ee96a551da752a44/)
+
+
