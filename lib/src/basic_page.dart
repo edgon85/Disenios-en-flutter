@@ -8,14 +8,16 @@ class BasicPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        children: <Widget>[
-          _crearImagen(),
-          _crearTitulo(),
-          SizedBox(height: 10.0,),
-          _crearAcciones(),
-          _crearText(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            _crearImagen(),
+            _crearTitulo(),
+            SizedBox(height: 10.0,),
+            _crearAcciones(),
+            _crearText(),
+          ],
+        ),
       ),
     );
   }
@@ -30,38 +32,40 @@ class BasicPage extends StatelessWidget {
 
   //TODO: Titulo de cabecera
   Widget _crearTitulo() {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
-      child: Row(
-        children: <Widget>[
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: <Widget>[
-                Text(
-                  'Carreterra en montaña',
-                  style: styleTitle,
-                ),
-                SizedBox(
-                  height: 7.0,
-                ),
-                Text(
-                  'Loren ipsunm texto de relleno para desarrollo',
-                  style: styleSubTitle,
-                )
-              ],
+    return SafeArea(
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 30.0, vertical: 20.0),
+        child: Row(
+          children: <Widget>[
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Text(
+                    'Carreterra en montaña',
+                    style: styleTitle,
+                  ),
+                  SizedBox(
+                    height: 7.0,
+                  ),
+                  Text(
+                    'Loren ipsunm texto de relleno para desarrollo',
+                    style: styleSubTitle,
+                  )
+                ],
+              ),
             ),
-          ),
-          Icon(
-            Icons.star,
-            color: Colors.red,
-            size: 30.0,
-          ),
-          Text(
-            '41',
-            style: TextStyle(fontSize: 20.0),
-          )
-        ],
+            Icon(
+              Icons.star,
+              color: Colors.red,
+              size: 30.0,
+            ),
+            Text(
+              '41',
+              style: TextStyle(fontSize: 20.0),
+            )
+          ],
+        ),
       ),
     );
   }
@@ -101,10 +105,12 @@ class BasicPage extends StatelessWidget {
 
   // TODO: texto del boton
   Widget _crearText() {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
-      child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque convallis placerat cursus. Duis vitae cursus ante. In quis tortor porttitor, molestie elit eget, eleifend nulla. Nam viverra purus ac lobortis mattis. Suspendisse maximus mi sed augue tincidunt feugiat. Curabitur nec egestas tortor. Aenean tristique ligula mauris, nec tempor elit finibus eget. Aliquam ac convallis nulla, non semper diam. Aliquam accumsan libero diam, non auctor purus pretium sed.',
-      textAlign: TextAlign.justify,
+    return SafeArea(
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 40.0, vertical: 20.0),
+        child: Text('Lorem ipsum dolor sit amet, consectetur adipiscing elit-. Pellentesque convallis placerat cursus. Duis vitae cursus ante. In quis tortor porttitor, molestie elit eget, eleifend nulla. Nam viverra purus ac lobortis mattis. Suspendisse maximus mi sed augue tincidunt feugiat. Curabitur nec egestas tortor. Aenean tristique ligula mauris, nec tempor elit finibus eget. Aliquam ac convallis nulla, non semper diam. Aliquam accumsan libero diam, non auctor purus pretium sed.\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit-. Pellentesque convallis placerat cursus. Duis vitae cursus ante. In quis tortor porttitor, molestie elit eget, eleifend nulla. Nam viverra purus ac lobortis mattis. Suspendisse maximus mi sed augue tincidunt feugiat. Curabitur nec egestas tortor. Aenean tristique ligula mauris, nec tempor elit finibus eget. Aliquam ac convallis nulla, non semper diam. Aliquam accumsan libero diam, non auctor purus pretium sed. \n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit-. Pellentesque convallis placerat cursus. Duis vitae cursus ante. In quis tortor porttitor, molestie elit eget, eleifend nulla. Nam viverra purus ac lobortis mattis. Suspendisse maximus mi sed augue tincidunt feugiat. Curabitur nec egestas tortor. Aenean tristique ligula mauris, nec tempor elit finibus eget. Aliquam ac convallis nulla, non semper diam. Aliquam accumsan libero diam, non auctor purus pretium sed.',
+        textAlign: TextAlign.justify,
+        ),
       ),
     );
   }

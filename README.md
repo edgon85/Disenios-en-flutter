@@ -6,3 +6,5 @@ Diseño de app en Flutter
 
 [2 - Diseño básico - parte 1](../../tree/0979b92796e3424e0d5da0fd9acdb04532818004/)
 
+[3 - Diseño básico - parte 2](../../tree/22fdbb10672f4a43fe743d65fa49e8a636d1522b/)
+
