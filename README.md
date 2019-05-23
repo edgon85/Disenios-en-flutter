@@ -18,3 +18,5 @@ Diseño de app en Flutter
 
 [8 - Diseño compuest, fondo y gradientes](../../tree/061f1a0165ea547e09a7bb894bfb76509ce49154/)
 
+[9 - Diseño compuest, StatusBar y títulos](../../tree/dd9a8cbba2e177155c2d28b912c27b5bff395966/)
+
