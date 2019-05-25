@@ -14,7 +14,8 @@ class MyApp extends StatelessWidget {
 
     //TODO: cambiar color al statusBar
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
-      statusBarColor: Colors.white
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.light,
     ));
 
     return MaterialApp(
